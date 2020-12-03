@@ -1,6 +1,8 @@
-$body-color: slateblue;
+:root {
+  --bg-color: #fff;
+}
 
 body {
-  color: $body-color;
+  color: var(--bg-color);
   font-family: sans-serif;
 }
