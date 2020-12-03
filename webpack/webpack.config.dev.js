@@ -20,7 +20,7 @@ module.exports = merge(common, {
       'process.env.NODE_ENV': JSON.stringify('development')
     }),
     new StylelintPlugin({
-      files: Path.join('src', '**/*.s?(a|c)ss')
+      files: Path.join('src', '**/*.css')
     })
   ],
   module: {
@@ -44,8 +44,8 @@ module.exports = merge(common, {
         loader: 'babel-loader'
       },
       {
-        test: /\.s?css$/i,
-        use: ['style-loader', 'css-loader?sourceMap=true', 'postcss-loader', 'sass-loader']
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader?sourceMap=true', 'postcss-loader']
       }
     ]
   }
