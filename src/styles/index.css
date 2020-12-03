@@ -1,6 +1,7 @@
 @import "./variables.css";
+@import "./fonts.css";
 
 body {
   color: var(--bg-color);
-  font-family: sans-serif;
+  font-family: "RobotoLight", sans-serif;
 }
