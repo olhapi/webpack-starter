@@ -1,6 +1,4 @@
-:root {
-  --bg-color: #fff;
-}
+@import "./variables.css";
 
 body {
   color: var(--bg-color);
