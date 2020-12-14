@@ -8,6 +8,7 @@ module.exports = {
     app: Path.resolve(__dirname, '../src/scripts/index.js'),
   },
   output: {
+    publicPath: '',
     path: Path.join(__dirname, '../build'),
     filename: 'public/js/[name].js',
   },
