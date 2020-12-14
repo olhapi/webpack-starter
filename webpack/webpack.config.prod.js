@@ -29,8 +29,21 @@ module.exports = merge(common, {
       },
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader'],
-      },
+        use: [MiniCssExtractPlugin.loader, {
+          loader: 'string-replace-loader',
+          options: {
+            flags: 'g',
+            search: 'public/',
+            replace: '',
+          }
+        }, {
+          loader: "css-loader",
+          options: {
+            url: false,
+            sourceMap: true
+          }
+        }, 'postcss-loader'],
+      }
     ],
   },
 });
