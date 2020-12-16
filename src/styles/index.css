@@ -6,8 +6,11 @@ body {
   color: var(--bg-color);
   font-family: "RobotoLight", sans-serif;
 
-  /* css features - delete or leave what you need */
-  overscroll-behavior-y: none; /* disable iOS overscroll */
-  scroll-behavior: smooth; /* smooth scrolling to anchors */
-  scroll-snap-type: y mandatory; /* section scroll snap on y axis */
+  /* css features - delete or uncomment what you need */
+
+  /* overscroll-behavior-y: none; /* disable iOS overscroll */
+
+  /* scroll-behavior: smooth; /* smooth scrolling to anchors */
+
+  /* scroll-snap-type: y mandatory; /* section scroll snap on y axis */
 }
